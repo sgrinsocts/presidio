@@ -2,6 +2,9 @@
 
 This module provides the core functionality for detecting and recognizing
 Personally Identifiable Information (PII) in text using NLP and pattern matching.
+
+Note: Forked from microsoft/presidio for personal learning and experimentation.
+See https://github.com/microsoft/presidio for the upstream project.
 """
 
 from presidio_analyzer.analyzer_engine import AnalyzerEngine
