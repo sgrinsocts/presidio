@@ -9,10 +9,13 @@ See https://github.com/microsoft/presidio for the upstream project.
 Personal notes:
 - Added LemmaContextAwareEnhancer to __all__ for easier access in experiments.
 - Tracking upstream version: 2.2.354
+- Added BatchAnalyzerEngine to imports for convenience; I use it frequently in
+  my batch processing scripts and got tired of importing it separately.
 """
 
 from presidio_analyzer.analyzer_engine import AnalyzerEngine
 from presidio_analyzer.analyzer_request import AnalyzerRequest
+from presidio_analyzer.batch_analyzer_engine import BatchAnalyzerEngine
 from presidio_analyzer.recognizer_result import RecognizerResult
 from presidio_analyzer.entity_recognizer import EntityRecognizer
 from presidio_analyzer.pattern_recognizer import PatternRecognizer
@@ -23,6 +26,7 @@ from presidio_analyzer.context_aware_enhancers import ContextAwareEnhancer, Lemm
 
 __all__ = [
     "AnalyzerEngine",
+    "BatchAnalyzerEngine",
     "AnalyzerRequest",
     "RecognizerResult",
     "EntityRecognizer",
